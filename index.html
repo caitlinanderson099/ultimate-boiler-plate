@@ -3,13 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI CSS Link -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+     <!-- Map box CSS -->
+     <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Gulp js Intro</title>
+    <title> Ultimate BoilerPlate </title>
 </head>
 <body>
-    
-    <h2> Gulp Boilerplate </h2>
+    <header>
+        <h1> The Ultimate BoilerPlate </h1>
+        <h3> Brief to implement all technologies </h3>
+    </header>
+
+    <!-- Start of Datepicker -->
+    <div class="datepicker">
+        <div class="title">   <h2> Select your preferred dates </h2> </div>
+        <div class="inputs"> 
+            <p> Start Date: <input type="text" id="startDate"> </p>
+            <p> End Date: <input type="text" id="endDate"> </p>
+            <p> Number of Days: <span id="numberOfDays"></span> </p>
+        </div>
+        <div id="results"></div>
+       
+    </div>
+    <!-- End of Datepicker -->
 
 
+
+
+    <!-- Start of Mapbox -->
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="buttons">
+            <!-- dynamically created using js -->
+        </div>
+    </div>
+    <!-- End of Mapbox -->
+
+
+
+
+   <!-- jQuery Link -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <!-- jQuery UI Link -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <!-- Mapbox JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5d99c8ae1e.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
